@@ -1,4 +1,16 @@
 <div id="page-content">
     <h1 class="text-center mt-4">Users </h1>
-    <%= render  "user" %>
+    <div class="flickr_pagination">
+        <div class="page_info">
+            <%= page_entries_info @users %>
+        </div>
+        <%= will_paginate @users, :container => false %>
+    </div>
+    <%= render "user" %>
+    <div class="flickr_pagination mb-4">
+        <div class="page_info">
+            <%= page_entries_info @users %>
+        </div>
+        <%= will_paginate @users, :container => false %>
+    </div>
 </div>

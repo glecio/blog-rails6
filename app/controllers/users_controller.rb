@@ -16,12 +16,12 @@ class UsersController < ApplicationController
     end
 
     def index
-        @users = User.all
+        @users = User.paginate(page: params[:page], per_page: 5)
     end
 
     # show a list of user's articles
     def show
-        @articles = @user.articles
+        @articles = @user.articles.paginate(page: params[:page], per_page: 1)
     end
     
     def edit
