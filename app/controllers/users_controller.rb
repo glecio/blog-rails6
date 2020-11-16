@@ -15,8 +15,13 @@ class UsersController < ApplicationController
         end
     end
 
+    def index
+        @users = User.all
+    end
+
+    # show a list of user's articles
     def show
-    
+        @articles = @user.articles
     end
     
     def edit
