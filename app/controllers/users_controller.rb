@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
     # show a list of user's articles
     def show
-        @articles = @user.articles.paginate(page: params[:page], per_page: 1)
+        @articles = @user.articles.paginate(page: params[:page], per_page: 5)
     end
     
     def edit
