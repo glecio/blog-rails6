@@ -8,11 +8,12 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title"><%= link_to user.username, user_path(user) %></h5>
-                        
                         <%= gravatar_for user, size: 150 %>
                         <p class="card-text"><%= pluralize(user.articles.count, "articles")  %></p>
-                            <%= link_to 'View Profile', user_path(user) , class:"btn btn-outline-success" %>
-                            <%= link_to 'Edit Profile', edit_user_path(user), class:"btn btn-outline-info" %>
+                        <%= link_to 'View Profile', user_path(user) , class:"btn btn-outline-success" %>
+                        <% if logged_in? and user == current_user %>
+                            <%= link_to "Edit profile", edit_user_path(user), class: "btn btn-outline-info" %>
+                        <% end %>
                     </div>
                     <div class="card-footer text-muted">
                         <small>Joined  <%= time_ago_in_words(user.created_at) %> ago </small>
