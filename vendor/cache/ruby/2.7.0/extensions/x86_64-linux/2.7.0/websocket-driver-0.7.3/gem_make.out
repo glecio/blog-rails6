@@ -1,0 +1,15 @@
+current directory: /home/glecio/Projects/RoR/blog-rails6/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/home/glecio/.asdf/installs/ruby/2.7.1/bin/ruby -I /home/glecio/.asdf/installs/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20201226-14546-kmo3ii.rb extconf.rb
+creating Makefile
+
+current directory: /home/glecio/Projects/RoR/blog-rails6/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/glecio/Projects/RoR/blog-rails6/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/glecio/Projects/RoR/blog-rails6/vendor/cache/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20201226-14546-ejz7y7
